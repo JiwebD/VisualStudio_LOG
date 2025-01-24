@@ -1,0 +1,45 @@
+Visual studio code
+
+원격저장소 \TEST 경로안에 clone.
+
+cmd 실행법
+        \TEST>cod .
+
+VScode 탐색기에 있는 폴더 및 파일들 오른쪽에 동그라미
+> staging 안된 상태란 뜻. = Unstaging
+
+! Enter
+기본 코드 작성
+
+F5 실행
+
+
+탐색
+-  >korean 검색  korean Language Pack for... >Install
+-  > server 검색 > Live Server > Install > 오른쪽 아래 Go Live 상태 됨.
+-  > auto Rename > AUto Rename Tag > Install  - 시작태그 변경하면 종료태그 자동 변경
+-  > bracket > Bracket Pair Color DLW > Install
+
+
+html 기본
+
+제목 태그
+<h1></h1>
+<h2></h2>
+<h3></h3>
+
+
+코드정렬 -  shift + alt + F
+코드복사 -  shift + alt + 키보드 방향키
+
+
+image
+png > 픽셀단위 > 깨짐현상
+svg > 깨지지않도록 내부적으로 코딩돼있음. > 안깨짐
+
+픽사베이 - 무료이미지 소스
+
+구글 ICON - 무료 아이콘 소스
+
+
+
