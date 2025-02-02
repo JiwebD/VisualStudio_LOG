@@ -1,4 +1,4 @@
-Visual studio code
+Visual studio code.
 
 원격저장소 \TEST 경로안에 clone.
 
