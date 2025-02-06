@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{box-sizing: border-box;}
+        body{
+
+            margin: 0;
+        }
+        div{
+            position: relative;
+            border: 1px solid;
+            width: 150px;
+            height: 150px;
+            margin: 50px;
+
+        }
+        .container{
+            position: relative;
+            border: 1px solid;
+            width: 150px;
+            height: 150px;
+        }
+        .container>.item{
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+
+
+        }
+        .container>.item>.front,
+        .container>.item>.back{
+            position: absolute;
+            width: 100%;
+        }
+        /* div:nth-child(1){
+            animation-name: moving1;
+            animation-duration: 2s;
+            animation-iteration-count: infinite;
+            animation-direction: alternate;
+        }
+        div:nth-child(2){
+            animation-name: moving1;
+            animation-duration: 2s;
+            animation-iteration-count: infinite;
+            animation-direction: alternate;
+        }
+        div:nth-child(3){
+
+        } */
+        @keyframes moving1{
+            from{margin-left:80%;}
+            to{margin-left: 0;}
+            0%{background-color: red; transform:;}
+            25%{background-color: orange; transform:;}
+            50%{background-color: yellow; transform:;}
+            75%{background-color: green;}
+            100%{background-color: royalblue;}
+            
+        }
+        @keyframes moving2{
+            from{margin-left:80%;}
+            to{margin-left:0;}
+
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item">
+            <div class="front"></div>
+            <div class="back"></div>
+        </div>
+    </div>
+    <div></div>
+    <div></div>
+    
+</body>
+</html>

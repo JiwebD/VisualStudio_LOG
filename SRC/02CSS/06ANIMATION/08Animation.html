@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{box-sizing: border-box;}
+        body::-webkit-scrollbar{
+            display: none;
+        }
+        body{
+            position: relative;
+            height: 100vh;
+            width: 100vw;
+            
+
+        }
+        div{
+            position: absolute;
+            top: 30%;
+            margin: 0 auto;
+            width: 400px;
+            height: 40px;
+            border: 2px solid red;
+            background-color: orange;
+            text-align: center;
+            line-height: 40px;
+            color: white;
+            font-weight: 600;
+        }
+
+        div:nth-child(1){
+            position: relative;
+            animation-name: moving1;
+            animation-duration: 2000ms;
+            animation-iteration-count: infinite;
+            animation-direction: alternate;
+        }
+        div:nth-child(2){
+            position: relative;
+            animation-name: moving2;
+            animation-duration: 2000ms;
+            animation-iteration-count: infinite;
+            animation-direction: alternate;
+        }
+        div:nth-child(3){
+            position: relative;
+            animation-name: moving3;
+            animation-duration: 2000ms;
+            animation-iteration-count: infinite;
+            animation-direction: alternate;
+        }
+
+        @keyframes moving1{
+            from{transform: translateY(1000px);}
+
+            top{transform: translateY(0);}
+        }
+
+        @keyframes moving2{
+            from{transform: translateX(1000px);}
+
+            top{transform: translateX(0);}
+        }
+
+        @keyframes moving3{
+            from{transform: translate(1000px,1000px);}
+
+            top{transform: translate(0);}
+        }
+    </style>
+</head>
+<body>
+    
+    <div>HELLOWORLD</div>
+    <div>HELLOWORLD</div>
+    <div>HELLOWORLD</div>
+    
+</body>
+</html>
