@@ -39,8 +39,8 @@
         <main>
             <section>
                 <div class="slider-block">
-                    <input type="radio" id="forward-1" name="slideradio" checked>
-                    <input type="radio" id="forward-2" name="slideradio">
+                    <input type="radio" id="forward-1" name="slideradio">
+                    <input type="radio" id="forward-2" name="slideradio" checked>
                     <input type="radio" id="forward-3" name="slideradio">
                     <input type="radio" id="forward-4" name="slideradio">
                     <input type="radio" id="backend-1" name="slideradio">
@@ -51,6 +51,36 @@
 
                     <div class="back-block"></div>
                     <div class="slider-wrapper">
+                        <div class="item">
+                            <label for="backend-4" class="prev"><span class="material-symbols-outlined">arrow_left</span></label>
+                            <label for="forward-2" class="next"><span class="material-symbols-outlined">arrow_right</span></label>
+                            <img src="./이미지/밴드.png" alt="">
+                            <p>1</p>
+                            <p>1</p>
+                        </div>
+                        <div class="item">
+                            <label for="backend-1" class="prev"><span class="material-symbols-outlined">arrow_left</span></label>
+                            <label for="forward-3" class="next"><span class="material-symbols-outlined">arrow_right</span></label>
+                            <img src="./이미지/뮤지컬.png" alt="">
+                            <p>2</p>
+                            <p>2</p>
+                        </div>
+                        <div class="item">
+                            <label for="backend-2" class="prev"><span class="material-symbols-outlined">arrow_left</span></label>
+                            <label for="forward-4" class="next"><span class="material-symbols-outlined">arrow_right</span></label>
+                            <img src="./이미지/리와인드.png" alt="">
+                            <p>3</p>
+                            <p>3</p>
+                        </div>
+                        <div class="item">
+                            <label for="backend-3" class="prev"><span class="material-symbols-outlined">arrow_left</span></label>
+                            <label for="forward-1" class="next"><span class="material-symbols-outlined">arrow_right</span></label>
+                            <img src="./이미지/어린이.png" alt="">
+                            <p>4</p>
+                            <p>4</p>
+                        </div>
+                    </div>
+                    <div aria-hidden class="slider-wrapper">
                         <div class="item">
                             <label for="backend-4" class="prev"><span class="material-symbols-outlined">arrow_left</span></label>
                             <label for="forward-2" class="next"><span class="material-symbols-outlined">arrow_right</span></label>
@@ -126,87 +156,141 @@
             <section>
                 <div class="project">
                     <div class="project-list">
-                        <div class="project-item">
-                            <img src="./이미지/뮤지컬.png" alt="">
-                            <p class="project-content1">수중 오페라 <심청></p>
-                            <p class="project-content2">"진짜 물 위에서 펼쳐지는 환상적인 공연"</p>
-                            <p class="project-content3">기획 ArtsHub</p>
+                        <div class="pl-1">
+                            
+                            <div class="project-item">
+                                <img src="./이미지/뮤지컬.png" alt="">
+                                <div>
+
+                                    <p class="project-content1">수중 오페라 <심청></p>
+                                    <p class="project-content2">"진짜 물 위에서 펼쳐지는 환상적인 공연"</p>
+                                    <p class="project-content3">기획 ArtsHub</p>
+                                </div>
+                            </div>
+                            <div class="project-item">
+                                <img src="./이미지/리와인드.png" alt="">
+                                <div>
+
+                                    <p class="project-content1">타임루프 뮤지컬 RE:WIND</p>
+                                    <p class="project-content2">"매일 똑같은 하루가 반복된다면?"<br/>
+                                    "노래와 춤으로 탈출하라!"</p>
+                                    <p class="project-content3">기획 ArtsHub</p>
+                                </div>
+                            </div>
                         </div>
-                        <div class="project-item">
-                            <img src="./이미지/리와인드.png" alt="">
-                            <p class="project-content1">타임루프 뮤지컬 RE:WIND</p>
-                            <p class="project-content2">"매일 똑같은 하루가 반복된다면?"<br/>
-                            "노래와 춤으로 탈출하라!"</p>
-                            <p class="project-content3">기획 ArtsHub</p>
-                        </div>
-                        <div class="project-item">
-                            <img src="./이미지/어린이.png" alt="">
-                            <p class="project-content1">그림 속으로</p>
-                            <p class="project-content2">"배우가 아닌, 바로 당신이 주인공이 되는 연극"</p>
-                            <p class="project-content3">기획 ArtsHub</p>
-                        </div>
-                        <div class="project-item">
-                            <img src="./이미지/밴드.png" alt="">
-                            <p class="project-content1">AI 작곡가 vs 인간 잦곡가</p>
-                            <p class="project-content2">"AI가 만든 교향곡"<br/>
-                            "인간 작곡가가 만든 교향곡.." 승자는...?!</p>
-                            <p class="project-content3">기획 ArtsHub</p>
-                        </div>
-                    </div>
-                    <div class="project-list">
-                        <div class="project-item">
-                            <img src="./이미지/뮤지컬.png" alt="">
-                            <p class="project-content1">수중 오페라 <심청></p>
-                            <p class="project-content2">"진짜 물 위에서 펼쳐지는 환상적인 공연"</p>
-                            <p class="project-content3">기획 ArtsHub</p>
-                        </div>
-                        <div class="project-item">
-                            <img src="./이미지/리와인드.png" alt="">
-                            <p class="project-content1">타임루프 뮤지컬 RE:WIND</p>
-                            <p class="project-content2">"매일 똑같은 하루가 반복된다면?"<br/>
-                            "노래와 춤으로 탈출하라!"</p>
-                            <p class="project-content3">기획 ArtsHub</p>
-                        </div>
-                        <div class="project-item">
-                            <img src="./이미지/어린이.png" alt="">
-                            <p class="project-content1">그림 속으로</p>
-                            <p class="project-content2">"배우가 아닌, 바로 당신이 주인공이 되는 연극"</p>
-                            <p class="project-content3">기획 ArtsHub</p>
-                        </div>
-                        <div class="project-item">
-                            <img src="./이미지/밴드.png" alt="">
-                            <p class="project-content1">AI 작곡가 vs 인간 잦곡가</p>
-                            <p class="project-content2">"AI가 만든 교향곡"<br/>
-                            "인간 작곡가가 만든 교향곡.." 승자는...?!</p>
-                            <p class="project-content3">기획 ArtsHub</p>
+                        <div class="pl-2">
+
+                            <div class="project-item">
+                                <img src="./이미지/어린이.png" alt="">
+                                <div>
+
+                                    <p class="project-content1">그림 속으로</p>
+                                    <p class="project-content2">"배우가 아닌, 바로 당신이 주인공이 되는 연극"</p>
+                                    <p class="project-content3">기획 ArtsHub</p>
+                                </div>
+                            </div>
+                            <div class="project-item">
+                                <img src="./이미지/밴드.png" alt="">
+                                <div>
+
+                                    <p class="project-content1">AI 작곡가 vs 인간 잦곡가</p>
+                                    <p class="project-content2">"AI가 만든 교향곡"<br/>
+                                    "인간 작곡가가 만든 교향곡.." 승자는...?!</p>
+                                    <p class="project-content3">기획 ArtsHub</p>
+                                </div>
+                            </div>
                         </div>
                     </div>
                     <div class="project-list">
-                        <div class="project-item">
-                            <img src="./이미지/뮤지컬.png" alt="">
-                            <p class="project-content1">수중 오페라 <심청></p>
-                            <p class="project-content2">"진짜 물 위에서 펼쳐지는 환상적인 공연"</p>
-                            <p class="project-content3">기획 ArtsHub</p>
+                        <div class="pl-1">
+                            
+                            <div class="project-item">
+                                <img src="./이미지/뮤지컬.png" alt="">
+                                <div>
+
+                                    <p class="project-content1">수중 오페라 <심청></p>
+                                    <p class="project-content2">"진짜 물 위에서 펼쳐지는 환상적인 공연"</p>
+                                    <p class="project-content3">기획 ArtsHub</p>
+                                </div>
+                            </div>
+                            <div class="project-item">
+                                <img src="./이미지/리와인드.png" alt="">
+                                <div>
+
+                                    <p class="project-content1">타임루프 뮤지컬 RE:WIND</p>
+                                    <p class="project-content2">"매일 똑같은 하루가 반복된다면?"<br/>
+                                    "노래와 춤으로 탈출하라!"</p>
+                                    <p class="project-content3">기획 ArtsHub</p>
+                                </div>
+                            </div>
                         </div>
-                        <div class="project-item">
-                            <img src="./이미지/리와인드.png" alt="">
-                            <p class="project-content1">타임루프 뮤지컬 RE:WIND</p>
-                            <p class="project-content2">"매일 똑같은 하루가 반복된다면?"<br/>
-                            "노래와 춤으로 탈출하라!"</p>
-                            <p class="project-content3">기획 ArtsHub</p>
+                        <div class="pl-2">
+
+                            <div class="project-item">
+                                <img src="./이미지/어린이.png" alt="">
+                                <div>
+
+                                    <p class="project-content1">그림 속으로</p>
+                                    <p class="project-content2">"배우가 아닌, 바로 당신이 주인공이 되는 연극"</p>
+                                    <p class="project-content3">기획 ArtsHub</p>
+                                </div>
+                            </div>
+                            <div class="project-item">
+                                <img src="./이미지/밴드.png" alt="">
+                                <div>
+
+                                    <p class="project-content1">AI 작곡가 vs 인간 잦곡가</p>
+                                    <p class="project-content2">"AI가 만든 교향곡"<br/>
+                                    "인간 작곡가가 만든 교향곡.." 승자는...?!</p>
+                                    <p class="project-content3">기획 ArtsHub</p>
+                                </div>
+                            </div>
                         </div>
-                        <div class="project-item">
-                            <img src="./이미지/어린이.png" alt="">
-                            <p class="project-content1">그림 속으로</p>
-                            <p class="project-content2">"배우가 아닌, 바로 당신이 주인공이 되는 연극"</p>
-                            <p class="project-content3">기획 ArtsHub</p>
+                    </div>
+                    <div class="project-list">
+                        <div class="pl-1">
+                            
+                            <div class="project-item">
+                                <img src="./이미지/뮤지컬.png" alt="">
+                                <div>
+
+                                    <p class="project-content1">수중 오페라 <심청></p>
+                                    <p class="project-content2">"진짜 물 위에서 펼쳐지는 환상적인 공연"</p>
+                                    <p class="project-content3">기획 ArtsHub</p>
+                                </div>
+                            </div>
+                            <div class="project-item">
+                                <img src="./이미지/리와인드.png" alt="">
+                                <div>
+
+                                    <p class="project-content1">타임루프 뮤지컬 RE:WIND</p>
+                                    <p class="project-content2">"매일 똑같은 하루가 반복된다면?"<br/>
+                                    "노래와 춤으로 탈출하라!"</p>
+                                    <p class="project-content3">기획 ArtsHub</p>
+                                </div>
+                            </div>
                         </div>
-                        <div class="project-item">
-                            <img src="./이미지/밴드.png" alt="">
-                            <p class="project-content1">AI 작곡가 vs 인간 잦곡가</p>
-                            <p class="project-content2">"AI가 만든 교향곡"<br/>
-                            "인간 작곡가가 만든 교향곡.." 승자는...?!</p>
-                            <p class="project-content3">기획 ArtsHub</p>
+                        <div class="pl-2">
+
+                            <div class="project-item">
+                                <img src="./이미지/어린이.png" alt="">
+                                <div>
+
+                                    <p class="project-content1">그림 속으로</p>
+                                    <p class="project-content2">"배우가 아닌, 바로 당신이 주인공이 되는 연극"</p>
+                                    <p class="project-content3">기획 ArtsHub</p>
+                                </div>
+                            </div>
+                            <div class="project-item">
+                                <img src="./이미지/밴드.png" alt="">
+                                <div>
+
+                                    <p class="project-content1">AI 작곡가 vs 인간 잦곡가</p>
+                                    <p class="project-content2">"AI가 만든 교향곡"<br/>
+                                    "인간 작곡가가 만든 교향곡.." 승자는...?!</p>
+                                    <p class="project-content3">기획 ArtsHub</p>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>  
+        <!-- class에는 상위, 하위 클래스가 있다.
+        class = 객체를 분류하기위함.
+        Animal(동물) = Dog 의 상위 클래스
+        Dog(강아지) = ANimal 의 하위 클래스 
+        -->
+
+    <script>
+        // 상위프로토타입 함수            
+        function Animal(name){
+            console.log('Animal 생성자 호출!')
+            this.name = name;   // Animal 함수에 name 속성추가
+        };
+        // 상위프로토타입에 기능추가
+        Animal.prototype.getName=function(){console.log(`My name is ${this.name}`)}
+
+        // 하위프로토타입 함수    
+        function Dog(name,kind){
+            Animal.call(this,name);     //상위 프로토타입 생성자 호출!
+            console.log("Dog 생성자 호출!")
+            this.kind = kind;           // Dog 함수에 kind 속성 추가
+
+        };
+
+        Dog.prototype=Object.create(Animal.prototype);  //Dog함수를 Animal함수에 프로토타입간 상속
+
+        function 포메라니안(name,kind,color){
+            Dog.call(this,name,kind);
+            console.log("포네라니안 생성자 호출!");
+            this.color = color;         // 포메라니안 함수에 color속성 추가
+        }
+
+        포메라니안.prototype=Object.create(Dog.prototype);  //포메라니안 함수를 Dog함수에 프로토타입간 상속
+
+
+        //Dog 객체 생성
+        const dog1 = new Dog('POPPI',"골든리트리버");
+        console.log(dog1);
+        dog1.getName();
+
+        console.log('-----------------------')
+        const dog2 = new 포메라니안('티모','포메라니안','WHITE');
+        console.log(dog2);
+
+    </script>
+</body>
+</html>
