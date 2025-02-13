@@ -32,6 +32,7 @@
             white-space: nowrap;
             font-size: 15px;
             /* display: flex; */
+            padding: 0;
         }
 
         .slide-block .slide-list>li {
@@ -57,23 +58,36 @@
             z-index: 10;
             top: 50%;
             transform: translateY(-50%);
-            padding: 50px;
+            /* padding: 50px; */
             cursor: pointer;
+            color: white;
+            font-size: 7rem;
+            /* display: none; */
         }
+
+        .slide-block>input[type="radio"]#slide-2:checked~.slide-wrap>ul.slide-list>li{
+            transform: translateX(-100%);
+        }
+        .slide-block>input[type="radio"]#slide-3:checked~.slide-wrap>ul.slide-list>li{
+            transform: translateX(-200%);
+        }
+        .slide-block>input[type="radio"]#slide-4:checked~.slide-wrap>ul.slide-list>li{
+            transform: translateX(-300%);
+        }
+        .slide-block>input[type="radio"]#slide-1:checked~.slide-wrap>ul.slide-list>li{
+            transform: translateX(-0%);
+        }
+
+
 
         .slide-block .slide-list .left {
             left: 30px;
-            background-color: ;
-            -webkit-mask-image: url(icon.svg);
-            mask-image: url(icon.svg);
-            background: url(./이미지/arrow_back_ios_new_24dp_5F6368_FILL0_wght400_GRAD0_opsz24.svg) center center / 100% no-repeat;
 
         }
 
+
         .slide-block .slide-list .right {
-            background-color: white;
             right: 30px;
-            background: url(./이미지/arrow_forward_ios_24dp_5F6368_FILL0_wght400_GRAD0_opsz24.svg) center center / 100% no-repeat;
 
         }
     </style>
@@ -85,7 +99,7 @@
     <main>
         <section>
             <div class="slide-block">
-                <input type="radio" name="slide" id="slide-1">
+                <input type="radio" name="slide" id="slide-1" checked>
                 <input type="radio" name="slide" id="slide-2">
                 <input type="radio" name="slide" id="slide-3">
                 <input type="radio" name="slide" id="slide-4">
@@ -93,30 +107,30 @@
                     <ul class="slide-list">
                         <li>
                             <a href="">
-                                <label for="slide-4" class="left"></label>
+                                <label for="slide-4" class="left material-symbols-outlined">arrow_left</label>
                                 <img src="./이미지/밴드.png" alt="">
-                                <label for="slide-2" class="right"></label>
+                                <label for="slide-2" class="right material-symbols-outlined">arrow_right</label>
                             </a>
                         </li>
                         <li>
                             <a href="">
-                                <label for="slide-1" class="left"></label>
+                                <label for="slide-1" class="left material-symbols-outlined">arrow_left</label>
                                 <img src="./이미지/뮤지컬.png" alt="">
-                                <label for="slide-3" class="right"></label>
+                                <label for="slide-3" class="right material-symbols-outlined">arrow_right</label>
                             </a>
                         </li>
                         <li>
                             <a href="">
-                                <label for="slide-2" class="left"></label>
+                                <label for="slide-2" class="left material-symbols-outlined">arrow_left</label>
                                 <img src="./이미지/리와인드.png" alt="">
-                                <label for="slide-4" class="right"></label>
+                                <label for="slide-4" class="right material-symbols-outlined">arrow_right</label>
                             </a>
                         </li>
                         <li>
                             <a href="">
-                                <label for="slide-3" class="left"></label>
+                                <label for="slide-3" class="left material-symbols-outlined">arrow_left</label>
                                 <img src="./이미지/어린이.png" alt="">
-                                <label for="slide-1" class="right"></label>
+                                <label for="slide-1" class="right material-symbols-outlined">arrow_right</label>
                             </a>
                         </li>
                     </ul>
