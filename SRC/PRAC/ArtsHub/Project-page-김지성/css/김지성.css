@@ -8,219 +8,6 @@
 
 .wrapper{}
 
-.wrapper .slider-block{
-    max-width: 1800px;
-    height: 450px;
-    background-color: #29c3ff1A;
-    position: relative;
-    margin: 0 auto;
-    overflow: hidden;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-    
-}
-/* .wrapper .slider-block>.back-block{
-    width: 503px;
-    height: 410px;
-    background-color: #D9D9D9;
-    position: absolute;
-    top : 57%;
-    left: 50%;
-    margin: -205px 0 0 -251.5px;
-    z-index: 2;
-    
-} */
-
-.wrapper .slider-block>.slidewrap{
-    height: 410px;
-    width: 503px;
-    position: relative;
-    overflow: hidden;
-    
-}
-.wrapper .slider-block>.slidewrap>.slider-wrapper{
-    height: 410px;
-    width: 2012px;
-    display: flex;
-    align-items: center;
-    /* gap: 55px; */
-    /* margin-left: 613px; */
-    z-index: 3;
-
-    position: absolute;
-    top: 0;
-    left: 0;
-    transition: .5s;
-
-
-
-
-
-}
-.wrapper .slider-block>input{
-    display: none;
-}
-.wrapper .slider-block>.slidewrap>.slider-wrapper>.item{
-    width: 503px;
-    height: 360px;
-    /* background-color: blue; */
-    position: relative;
-    transition: 0.5s;
-    /* margin-left: 55px; */
-    /* box-shadow: 0 40px 0 -20px #D9D9D9; */
-
-}
-.wrapper .slider-block .slider-wrapper>.item:nth-child(1){
-}
-.wrapper .slider-block>.slidewrap>.slider-wrapper>.item>img{
-    /* position: absolute;
-    left: 0;
-    top: 0; */
-    
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-
-.wrapper .slider-block>.slidewrap>.slider-wrapper>.item>label{
-    width: 45px;
-    height: 45px;
-    color: white;
-    background-color: black;
-    border-radius: 10px;
-    z-index: 4;
-
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    margin: auto;
-
-    display: none;
-}
-/* .wrapper .slider-block>.slider-wrapper>.item:nth-child(1)>label{
-    display: block;
-} */
-.wrapper .slider-block>.slidewrap>.slider-wrapper>.item>label>.material-symbols-outlined{
-    font-size : 3rem;
-    display: block;
-    cursor: pointer;
-}
-
-
-
-
-
-
-/* 버튼 클릭 */
-.slider-block>input[type="radio"]#forward-2:checked~.slidewrap>.slider-wrapper>.item{
-    /* left: -558px; */
-    transform: translateX(-503px);
-}
-.slider-block>input[type="radio"]#forward-2:checked~.slidewrap>.slider-wrapper>.item:nth-child(2){
-    /* scale: 1.1; */
-    width: 573px;
-    height: 410px;
-    box-shadow: 0 40px 0 -20px #D9D9D9;
-}
-
-.slider-block>input[type="radio"]#forward-2:checked~.slidewrap>.slider-wrapper>.item:nth-child(2)>label{
-    display: block;
-}
-.slider-block>input[type="radio"]#forward-2:checked~.slidewrap>.slider-wrapper>.item:nth-child(1)>label{
-    display: none;
-}
-.slider-block>input[type="radio"]#forward-3:checked~.slidewrap>.slider-wrapper>.item{
-    /* left: -1116px; */
-    transform: translateX(-1006px);
-    
-
-}
-.slider-block>input[type="radio"]#forward-3:checked~.slidewrap>.slider-wrapper>.item:nth-child(3){
-    width: 573px;
-    height: 410px;
-    box-shadow: 0 40px 0 -20px #D9D9D9;
-
-}
-.slider-block>input[type="radio"]#forward-3:checked~.slidewrap>.slider-wrapper>.item:nth-child(3)>label{
-    display: block;
-}
-.slider-block>input[type="radio"]#forward-4:checked~.slidewrap>.slider-wrapper>.item{
-    /* left: -1674px; */
-    transform: translateX(-1509px);
-
-}
-.slider-block>input[type="radio"]#forward-4:checked~.slidewrap>.slider-wrapper>.item:nth-child(4){
-    width: 573px;
-    height: 410px;
-    box-shadow: 0 40px 0 -20px #D9D9D9;
-
-}
-.slider-block>input[type="radio"]#forward-4:checked~.slidewrap>.slider-wrapper>.item:nth-child(4)>label{
-    display: block;
-}
-.slider-block>input[type="radio"]#backend-1:checked~.slidewrap>.slider-wrapper>.item{
-    /* left: 0; */
-    transform: translateX(0%);
-
-}
-.slider-block>input[type="radio"]#backend-1:checked~.slidewrap>.slider-wrapper>.item:nth-child(1){
-    width: 573px;
-    height: 410px;
-    box-shadow: 0 40px 0 -20px #D9D9D9;
-
-}
-.slider-block>input[type="radio"]#backend-1:checked~.slidewrap>.slider-wrapper>.item:nth-child(1)>label{
-    display: block;
-}
-
-.slider-block>input[type="radio"]#backend-2:checked~.slidewrap>.slider-wrapper>.item{
-    /* left: -558px; */
-    transform: translateX(-503px);
-
-}
-.slider-block>input[type="radio"]#backend-2:checked~.slidewrap>.slider-wrapper>.item:nth-child(2){
-    width: 573px;
-    height: 410px;
-    box-shadow: 0 40px 0 -20px #D9D9D9;
-
-}
-.slider-block>input[type="radio"]#backend-2:checked~.slidewrap>.slider-wrapper>.item:nth-child(2)>label{
-    display: block;
-}
-.slider-block>input[type="radio"]#backend-3:checked~.slidewrap>.slider-wrapper>.item{
-    /* left: -1116px; */
-    transform: translateX(-1006px);
-
-}
-.slider-block>input[type="radio"]#backend-3:checked~.slidewrap>.slider-wrapper>.item:nth-child(3){
-    width: 573px;
-    height: 410px;
-    box-shadow: 0 40px 0 -20px #D9D9D9;
-
-}
-.slider-block>input[type="radio"]#backend-3:checked~.slidewrap>.slider-wrapper>.item:nth-child(3)>label{
-    display: block;
-}
-
-
-.wrapper .slider-block>.slider-wrapper>.item:nth-child(2){
-    width: 573px;
-    height: 410px;
-}
-
-.wrapper .slider-block>.slidewrap>.slider-wrapper>.item>label.prev{
-    left: 10px;
-}
-.wrapper .slider-block>.slidewrap>.slider-wrapper>.item>label.next{
-    right:10px;
-}
-
 
 
 
@@ -270,8 +57,17 @@
 }
 .category>ul.category-list>li>p{
     margin: 0;
+    font-size: 1rem;
 }
-
+/* 카테고리 반응형 */
+@media (max-width:700px){
+    .category{
+        width: 100%;
+    }
+    .category>ul.category-list>li>p{
+        font-size: 0.7rem;
+    }
+}
 
 /* project 목록 */
 
@@ -284,8 +80,8 @@
 }
 .project>.project-list{
     width: 100%;
-    height: 350px;
-    background-color: bisque;
+    height: 380px;
+    /* background-color: bisque; */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -325,7 +121,7 @@
 }
 .project>.project-list .project-item>img{
     width: 100%;
-    height: 100%;
+    height: 220px;
     object-fit: cover;
     border-radius: 20px 20px 0 0;
 
@@ -344,14 +140,38 @@
     font-size: 1rem;
     font-weight: 900;
     margin: 0;
+    color: #00c4c4;
+
 }
 .project>.project-list .project-item>div>.project-content2{
     font-size: 0.875rem;
     margin: 0;
+    color: #212529;
 }
+
 .project>.project-list .project-item>div>.project-content3{
+    /* display: flex; */
     font-size: 0.563rem;
-    margin: 0;
+    padding-top: 3px;
+    border-radius: 6px;
+    font-weight: 600;
+    color: #868e96;
+
+}
+.project>.project-list .project-item>div>ul{
+    display: flex;
+    justify-content: start;
+    gap: 10px;
+}
+.project>.project-list .project-item>div>ul>.project-content4{
+    /* display: flex; */
+    background-color: gainsboro;
+    font-size: 0.563rem;
+    padding: 3px 2px;
+    border-radius: 6px;
+    font-weight: 600;
+    color: #495057;
+
 }
 
 
@@ -367,11 +187,15 @@
     .project>.project-list>.pl-1,
     .project>.project-list>.pl-2{
         width: 80%;
-        height: 400px;
+        height: 380px;
     }
     .project>.project-list .project-item{}
-    .project>.project-list .project-item>img{}    
-    .project>.project-list .project-item>div{}
+    .project>.project-list .project-item>img{
+        /* height: ; */
+    }    
+    .project>.project-list .project-item>div{
+
+    }
     
         
 }
@@ -386,7 +210,7 @@
     .project>.project-list>.pl-1,
     .project>.project-list>.pl-2{
         width: 80%;
-        height: 350px;
+        height: 380px;
     }
     .project>.project-list .project-item{}
     .project>.project-list .project-item>img{}    
@@ -410,18 +234,19 @@
         flex-direction: column;
     }
     .project>.project-list .project-item{
-        height: 180px;
+        /* height: 200px; */
+        /* height: ; */
         display: flex;
         flex-direction: row;
+        align-items: center;
     }
     .project>.project-list .project-item>img{
         width: 50%;
     }    
-    .project>.project-list .project-item>div{
-        height: 100%;
-        display: flex;
+    .project>.project-list> .project-item>.item-content{
+        /* height: 5000px; */
 
-        justify-content: center;
+        /* justify-content: center; */
     }
     
         

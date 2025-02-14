@@ -14,7 +14,20 @@
                 'FILL' 0,
                 'wght' 400,
                 'GRAD' 0,
-                'opsz' 24/
+                'opsz' 24
+        }
+
+        .slide-block {
+            max-width: 1800px;
+
+            background-color: #29c3ff1A;
+            position: relative;
+            margin: 0 auto;
+            /* overflow: hidden; */
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 20px;
         }
 
         .slide-block input {
@@ -22,17 +35,29 @@
         }
 
         .slide-block .slide-wrap {
-            border: 1px solid;
-            max-width: 1200px;
+            /* border: 1px solid; */
+            max-width: 503px;
             margin: 0 auto;
+            position: relative;
             /* overflow: hidden; */
+
         }
 
         .slide-block .slide-list {
             white-space: nowrap;
-            font-size: 15px;
+            font-size: 0px;
             /* display: flex; */
+            margin: 50px 0;
             padding: 0;
+        }
+
+        .control {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+
         }
 
         .slide-block .slide-list>li {
@@ -41,19 +66,28 @@
             vertical-align: middle;
             width: 100%;
             transition: .5s;
-        }
+            padding-right: 80px;
 
+
+        }
         .slide-block .slide-list>li>a {
             display: block;
             position: relative;
+            /* font-size: 3rem; */
+            
+
+
 
         }
 
         .slide-block .slide-list>li>a img {
             width: 100%;
-        }
+            border-radius: 20px;
 
-        .slide-block .slide-list label {
+
+
+        }
+        .slide-block .slide-list>.control label {
             position: absolute;
             z-index: 10;
             top: 50%;
@@ -61,33 +95,138 @@
             /* padding: 50px; */
             cursor: pointer;
             color: white;
-            font-size: 7rem;
-            /* display: none; */
+            font-size: 3rem;
+            padding: 0.1em;
+            display: none;
+            border-radius: 15px;
+            background-color: #00000050;
+        }
+        .slide-block .slide-list>li>a div{
+            width: 100%;
+            position: absolute;
+            bottom: 0%;
+            white-space: wrap;
+        }
+        .slide-block .slide-list>li>a div>.p1{
+            font-size: 2rem; font-weight: 600; text-align: center;
+        }
+        .slide-block .slide-list>li>a div>.p2{
+            font-size: 1.5rem; font-weight: 500; text-align: center;
+        }
+        @media (max-width :1024px) {
+            .slide-block .slide-wrap{
+                width: 280px;
+            }
+            .slide-block .slide-list>li{
+                padding-right: 55px;
+            }
+            .slide-block .slide-list>li>a div>.p1{
+                font-size: 1.3rem;
+            }
+            .slide-block .slide-list>li>a div>.p2{
+                font-size: 0.8rem;
+            }
+            .slide-block .slide-list>.control label {
+                font-size: 2rem;
+            }
+            
+        }
+        @media (max-width :480px) {
+            .slide-block .slide-wrap{
+                width: 80%;
+            }
+            .slide-block .slide-list>li{
+                padding-right: 55px;
+            }
+            .slide-block .slide-list>li>a div>.p1{
+                font-size: 1.4rem;
+            }
+            .slide-block .slide-list>li>a div>.p2{
+                font-size: 0.9rem;
+            }
+            .slide-block .slide-list>.control label {
+                font-size: 2rem;
+            }
+
+            
         }
 
-        .slide-block>input[type="radio"]#slide-2:checked~.slide-wrap>ul.slide-list>li{
+
+
+
+
+
+        input[type="radio"]#slide-2:checked~.slide-wrap>ul.slide-list>.control>.control-2>label {
+            display: block;
+        }
+
+        input[type="radio"]#slide-3:checked~.slide-wrap>ul.slide-list>.control>.control-3>label {
+            display: block;
+        }
+
+        input[type="radio"]#slide-4:checked~.slide-wrap>ul.slide-list>.control>.control-4>label {
+            display: block;
+        }
+
+        input[type="radio"]#slide-1:checked~.slide-wrap>ul.slide-list>.control>.control-1>label {
+            display: block;
+        }
+
+        .slide-block>input[type="radio"]#slide-2:checked~.slide-wrap>ul.slide-list>li {
             transform: translateX(-100%);
         }
-        .slide-block>input[type="radio"]#slide-3:checked~.slide-wrap>ul.slide-list>li{
+
+        .slide-block>input[type="radio"]#slide-3:checked~.slide-wrap>ul.slide-list>li {
             transform: translateX(-200%);
         }
-        .slide-block>input[type="radio"]#slide-4:checked~.slide-wrap>ul.slide-list>li{
+
+        .slide-block>input[type="radio"]#slide-4:checked~.slide-wrap>ul.slide-list>li {
             transform: translateX(-300%);
         }
-        .slide-block>input[type="radio"]#slide-1:checked~.slide-wrap>ul.slide-list>li{
+
+        .slide-block>input[type="radio"]#slide-1:checked~.slide-wrap>ul.slide-list>li {
             transform: translateX(-0%);
+        }
+
+        .slide-block>input[type="radio"]#slide-2:checked~.slide-wrap>ul.slide-list>li:nth-child(2)>a>img {
+            scale: 1.2;
+            -webkit-box-shadow: 0 20px 10px -6px #777;
+            -moz-box-shadow: 0 20px 10px -6px #777;
+            box-shadow: 0 20px 10px -6px #777;
+
+        }
+
+        .slide-block>input[type="radio"]#slide-3:checked~.slide-wrap>ul.slide-list>li:nth-child(3)>a>img {
+            scale: 1.2;
+            -webkit-box-shadow: 0 20px 10px -6px #777;
+            -moz-box-shadow: 0 20px 10px -6px #777;
+            box-shadow: 0 20px 10px -6px #777;
+        }
+
+        .slide-block>input[type="radio"]#slide-4:checked~.slide-wrap>ul.slide-list>li:nth-child(4)>a>img {
+            scale: 1.2;
+            -webkit-box-shadow: 0 20px 10px -6px #777;
+            -moz-box-shadow: 0 20px 10px -6px #777;
+            box-shadow: 0 20px 10px -6px #777;
+        }
+
+        .slide-block>input[type="radio"]#slide-1:checked~.slide-wrap>ul.slide-list>li:nth-child(1)>a>img {
+            scale: 1.2;
+            -webkit-box-shadow: 0 20px 10px -6px #777;
+            -moz-box-shadow: 0 20px 10px -6px #777;
+            box-shadow: 0 20px 10px -6px #777;
         }
 
 
 
         .slide-block .slide-list .left {
-            left: 30px;
+            left: 10px;
 
         }
 
 
         .slide-block .slide-list .right {
-            right: 30px;
+            right: 10px;
 
         }
     </style>
@@ -107,32 +246,64 @@
                     <ul class="slide-list">
                         <li>
                             <a href="">
-                                <label for="slide-4" class="left material-symbols-outlined">arrow_left</label>
                                 <img src="./이미지/밴드.png" alt="">
+                                <div>
+                                    <p class="p1">AI 작곡가 vs 인간 작곡가<br/>승자는..?</p>
+                                    <p class="p2">Ai vs 인간</p>    
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <img src="./이미지/밴드.png" alt="">
+                                <div>
+                                    <p class="p1">AI 작곡가 vs 인간 작곡가<br/>승자는..?</p>
+                                    <p class="p2">Ai vs 인간</p>    
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <img src="./이미지/밴드.png" alt="">
+                                <div>
+                                    <p class="p1">AI 작곡가 vs 인간 작곡가<br/>승자는..?</p>
+                                    <p class="p2">Ai vs 인간</p>    
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <img src="./이미지/밴드.png" alt="">
+                                <div>
+                                    <p class="p1">AI 작곡가 vs 인간 작곡가<br/>승자는..?</p>
+                                    <p class="p2">Ai vs 인간</p>    
+                                </div>
+                            </a>
+                        </li>
+                        <div class="control">
+                            <div class="control-1">
+                                <label for="slide-4" class="left material-symbols-outlined">arrow_left</label>
                                 <label for="slide-2" class="right material-symbols-outlined">arrow_right</label>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="">
+                            </div>
+                        </div>
+                        <div class="control">
+                            <div class="control-2">
                                 <label for="slide-1" class="left material-symbols-outlined">arrow_left</label>
-                                <img src="./이미지/뮤지컬.png" alt="">
                                 <label for="slide-3" class="right material-symbols-outlined">arrow_right</label>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="">
+                            </div>
+                        </div>
+                        <div class="control">
+                            <div class="control-3">
                                 <label for="slide-2" class="left material-symbols-outlined">arrow_left</label>
-                                <img src="./이미지/리와인드.png" alt="">
                                 <label for="slide-4" class="right material-symbols-outlined">arrow_right</label>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="">
+                            </div>
+                        </div>
+                        <div class="control">
+                            <div class="control-4">
                                 <label for="slide-3" class="left material-symbols-outlined">arrow_left</label>
-                                <img src="./이미지/어린이.png" alt="">
                                 <label for="slide-1" class="right material-symbols-outlined">arrow_right</label>
-                            </a>
-                        </li>
+                            </div>
+                        </div>
                     </ul>
                 </div>
             </div>
