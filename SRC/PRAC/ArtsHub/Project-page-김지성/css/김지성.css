@@ -3,10 +3,9 @@
         'FILL' 0,
         'wght' 400,
         'GRAD' 0,
-        'opsz' 24/
+        'opsz' 24
 }
 
-.wrapper{}
 
 
 
@@ -30,7 +29,7 @@
 /* category */
 .category{
     max-width: 1348px;
-    height: 80px;
+    height: 100px;
     margin: auto;
     background-color: #29c3ff0d;
     margin-bottom:70px;
@@ -49,11 +48,13 @@
     align-items: center;
     flex-direction: column;
     gap: 10px;
+    margin: 0;
 }
 .category>ul.category-list>img{
     width: 45px;
     height: 45px;
     object-fit: cover;
+    margin: 0;
 }
 .category>ul.category-list>li>p{
     margin: 0;
@@ -71,17 +72,17 @@
 
 /* project 목록 */
 
-.project{
+.projectMAIN{
     max-width: 1348px;
     margin: auto;
+    margin-bottom: 70px;
     display: flex;
     flex-direction: column;
     gap: 36px;
 }
-.project>.project-list{
+.projectMAIN>.project-list{
     width: 100%;
     height: 380px;
-    /* background-color: bisque; */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -91,7 +92,7 @@
     position: relative;
 }
 
-.project>.project-list>.pl-1{
+.projectMAIN>.project-list>.pl-1{
     width: 49%;
     height: 100%;
     display: flex;
@@ -99,7 +100,7 @@
 
 
 }
-.project>.project-list>.pl-2{
+.projectMAIN>.project-list>.pl-2{
     width: 49%;
     height: 100%;
     display: flex;
@@ -107,7 +108,7 @@
 
 }
 
-.project>.project-list .project-item{
+.projectMAIN>.project-list .project-item{
     width: 100%;
     height: 100%;
     border-radius: 20px 20px 0 0;
@@ -116,142 +117,125 @@
     color: black;
     display: flex;
     flex-direction: column;
-    /* overflow: hidden; */
 
 }
-.project>.project-list .project-item>img{
+.projectMAIN>.project-list .project-item>a{
+    margin: 0;
+}
+.projectMAIN>.project-list .project-item>a>img{
     width: 100%;
     height: 220px;
     object-fit: cover;
     border-radius: 20px 20px 0 0;
+    margin: 0;
 
 
     
 }
-.project>.project-list .project-item>div{
+.projectMAIN>.project-list .project-item>div{
     height: 100%;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
 
     padding: 10px 0 10px 10px;
+    margin: 0;
 }
-.project>.project-list .project-item>div>.project-content1{
+.projectMAIN>.project-list .project-item>div>.project-content1{
     font-size: 1rem;
     font-weight: 900;
     margin: 0;
     color: #00c4c4;
+    margin: 0;
 
 }
-.project>.project-list .project-item>div>.project-content2{
+.projectMAIN>.project-list .project-item>div>.project-content2{
     font-size: 0.875rem;
     margin: 0;
     color: #212529;
+    margin: 0;
 }
 
-.project>.project-list .project-item>div>.project-content3{
-    /* display: flex; */
+.projectMAIN>.project-list .project-item>div>.project-content3{
     font-size: 0.563rem;
     padding-top: 3px;
     border-radius: 6px;
     font-weight: 600;
     color: #868e96;
+    margin: 0;
 
 }
-.project>.project-list .project-item>div>ul{
+.projectMAIN>.project-list .project-item>div>ul{
     display: flex;
     justify-content: start;
     gap: 10px;
+    margin: 0;
 }
-.project>.project-list .project-item>div>ul>.project-content4{
-    /* display: flex; */
+.projectMAIN>.project-list .project-item>div>ul>.project-content4{
     background-color: gainsboro;
     font-size: 0.563rem;
     padding: 3px 2px;
     border-radius: 6px;
     font-weight: 600;
     color: #495057;
+    margin: 0;
 
 }
 
 
  /* 프로젝트 반응형*/
 @media (max-width:1024px){
-    .project{}
-    .project>.project-list{
+    .projectMAIN>.project-list{
         height: 100%;
         width: 100%;
         display: flex;
         flex-wrap: none;
     }
-    .project>.project-list>.pl-1,
-    .project>.project-list>.pl-2{
+    .projectMAIN>.project-list>.pl-1,
+    .projectMAIN>.project-list>.pl-2{
         width: 80%;
         height: 380px;
-    }
-    .project>.project-list .project-item{}
-    .project>.project-list .project-item>img{
-        /* height: ; */
-    }    
-    .project>.project-list .project-item>div{
-
-    }
-    
-        
+    }       
 }
 @media (max-width:790px){
-    .project{}
-    .project>.project-list{
+    .projectMAIN>.project-list{
         height: 100%;
         width: 100%;
         display: flex;
         flex-wrap: none;
     }
-    .project>.project-list>.pl-1,
-    .project>.project-list>.pl-2{
+    .projectMAIN>.project-list>.pl-1,
+    .projectMAIN>.project-list>.pl-2{
         width: 80%;
         height: 380px;
-    }
-    .project>.project-list .project-item{}
-    .project>.project-list .project-item>img{}    
-    .project>.project-list .project-item>div{}
-    
-        
+    }     
 }
 @media (max-width:620px){
-    .project{}
-    .project>.project-list{
+    .projectMAIN>.project-list{
         height: 100%;
         width: 100%;
         display: flex;
         flex-wrap: none;
     }
-    .project>.project-list>.pl-1,
-    .project>.project-list>.pl-2{
+    .projectMAIN>.project-list>.pl-1,
+    .projectMAIN>.project-list>.pl-2{
         width: 90%;
         height: 100%;
         display: flex;
         flex-direction: column;
     }
-    .project>.project-list .project-item{
-        /* height: 200px; */
-        /* height: ; */
+    .projectMAIN>.project-list .project-item{
         display: flex;
         flex-direction: row;
         align-items: center;
     }
-    .project>.project-list .project-item>img{
+
+    .projectMAIN>.project-list .project-item>img{
         width: 50%;
     }    
-    .project>.project-list> .project-item>.item-content{
-        /* height: 5000px; */
-
-        /* justify-content: center; */
-    }
-    
-        
+    .projectMAIN>.project-list .project-item>div{
+        display: flex;
+        gap: 10px;
+        padding-right: 5px;
+    }     
 }
-
-
- /* 카테고리 반응형*/
- 
