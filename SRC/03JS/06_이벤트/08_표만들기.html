@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* td {
+            border: 1px solid;
+            width: 50px;
+            height: 50px;
+        } */
+        div {
+            /* display: flex;
+            position: relative; */
+        }
+
+        .inputlb {
+            position: absolute;
+            left: 50%;
+        }
+
+        .chk {
+            text-decoration: none;
+            border: 1px solid;
+            padding: 5px 10px;
+            background-color: lightgray;
+            font-weight: 600;
+            position: relative;
+            /* left: 50%; */
+            /* position: absolute; */
+        }
+
+        .checkboxcreate {
+            border: 1px solid;
+            width: 400px;
+            height: 400px;
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+
+        <input type="number" id="rows">
+        <label for="rows">행 개수</label>
+        <input type="number" id="cols">
+        <label for="cols">열 개수</label>
+        <button onclick="createTable()">생성</button>
+
+
+
+
+        <div id="table-container">
+
+        </div>
+
+    </div>
+
+    <!-- <script>
+
+        // 행 열 입력 함수
+        function createTable() {
+            let rows = document.getElementById('rows').value;
+            let cols = document.getElementById('cols').value;
+            let container = document.getElementById('table-container');
+
+            if (rows < 1 || cols < 1){
+                alert("행과 열 개수를 1 이상 입력하세요.");
+                return;
+            }
+            
+            let table = "<table>";
+
+                       // 테이블 헤더 생성
+                       table += "<tr>";
+            for (let c = 0; c < cols; c++) {
+                table += `<th>Header ${c + 1}</th>`;
+            }
+            table += "</tr>";
+
+            // 테이블 본문 생성
+            for (let r = 0; r < rows; r++) {
+                table += "<tr>";
+                for (let c = 0; c < cols; c++) {
+                    table += `<td>${r + 1}-${c + 1}</td>`;
+                }
+                table += "</tr>";
+            }
+
+            table += "</table>";
+
+            // 기존 테이블 제거 후 새 테이블 추가
+            container.innerHTML = table;
+        }
+        
+
+    </script> -->
+
+    <!-- <table>
+        <tr>
+            <td>1</td>
+            <td>23</td>
+            <td>45</td>
+            <td>56</td>
+            <td>89</td>
+        </tr>
+    </table> -->
+
+</body>
+
+</html>
