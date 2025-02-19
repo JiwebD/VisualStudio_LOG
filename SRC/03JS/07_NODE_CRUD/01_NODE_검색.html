@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <ul>
+        <li>LIST_1</li>
+        <li id="li-2">LIST_2</li>
+        <li class="item">LIST_3</li>
+        <li>LIST_4</li>
+        <li id="li-5">LIST_5</li>
+        <li>LIST_6</li>
+        <li class="item">LIST_7</li>
+        <li class="item">LIST_8</li>
+    </ul>
+
+    <script>
+        // getElementById('id명')
+        const li2El = document.getElementById('li-2');
+        li2El.style.backgroundColor = "orange";
+        // 자바스크립트는 style을 속성을 적을때 background-color에서 -를 인식하지 못해서 -를 빼고 뒤부분을 대문자로 치환해서적어줘야한다.
+        li2El.style.fontSize="2rem";
+
+        // querySelector('선택자')
+        const itemEl = document.querySelector('.item'); //querySelector는 단일 노드만 가져오기때문에 제일 첫번째노드만 스타일이 적용된걸 볼 수 있다.
+        itemEl.style.color="green";
+        itemEl.style.fontWeight="900";
+
+        // querySelectorAll('선택자')
+        const itemEls = document.querySelectorAll('.item');
+        console.log(itemEls);
+        itemEls.forEach((item)=>{
+            item.style.border="2px solid orange";
+            item.style.margin="20px 0";
+        });
+
+        // 
+        const liEls = document.getElementsByTagName('li');  //배열 흉내를 내고있어서 배열에서쓸 수 있는 모든 함수를 쓸 수 없다.
+        console.log(liEls);
+        // 배열x - forEach 사용불가
+        // liEls.forEach((item)=>{console.log(item);});
+
+        // 유사배열 -> 배열 (Array.from())
+        const liEls2 = Array.from(liEls);
+        console.log(liEls2);
+        liEls2.forEach((item)=>{
+            console.log(item);
+        })
+    </script>
+
+</body>
+
+</html>
