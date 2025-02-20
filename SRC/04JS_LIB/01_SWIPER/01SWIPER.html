@@ -48,6 +48,39 @@
         .wrapper>main>section.banner-section>.swiper>.swiper-wrapper>.swiper-slide {
             height: 100%;
         }
+
+        .banner-section>.swiper .swiper-pagination{}
+        .banner-section>.swiper .swiper-pagination>.swiper-pagination-bullet{
+            width : 15px;
+            height : 15px;
+            background-color: orange;
+            opacity: .8;
+        }
+        
+        .banner-section>.swiper .swiper-pagination>.swiper-pagination-bullet-active{
+            background-color: royalblue;;
+            opacity:1 !important;
+        }
+
+        .banner-section>.swiper .swiper-button-prev,
+        .banner-section>.swiper .swiper-button-next{
+            color:white;
+            width:50px;
+            height:50px;
+            background-color: black;
+            padding : 5px;
+            border-radius: 50%;
+            font-size : 1rem;
+        }
+        .banner-section>.swiper .swiper-button-prev::after,
+        .banner-section>.swiper .swiper-button-next::after{
+            font-size : 1.3rem;
+            font-weight: 800;
+        }
+        .banner-section>.swiper .swiper-scrollbar{
+            /* background-color:red; */
+        }
+
     </style>
 </head>
 
@@ -100,22 +133,29 @@
             
             effect : "slide",   // slide(기본) , fade , scroll , cube , coverflow ,flip 
             mousewheel: true,
+            
+            // slidesPerView:3,
+            // spaceBetween:30,    // 사이간격
+            // speed :300,         // 애니메이션 전환속도
+            // centeredSlides : true,
 
-            // // If we need pagination
-            // pagination: {
-            //     el: '.swiper-pagination',
-            // },
+            // If we need pagination
+            pagination: {
+                el: '.wrapper>main>section.banner-section .swiper-pagination',
+                clickable : true,
+                type : 'bullets',   //bullets(기본), fraction , progressbar
+            },
 
             // // Navigation arrows
-            // navigation: {
-            //     nextEl: '.swiper-button-next',
-            //     prevEl: '.swiper-button-prev',
-            // },
+            navigation: {
+                nextEl: '.wrapper>main>section.banner-section .swiper-button-next',
+                prevEl: '.wrapper>main>section.banner-section .swiper-button-prev',
+            },
 
             // // And if we need scrollbar
-            // scrollbar: {
-            //     el: '.swiper-scrollbar',
-            // },
+            scrollbar: {
+                el: '.swiper-scrollbar',
+            },
         });
     </script>
 </body>
