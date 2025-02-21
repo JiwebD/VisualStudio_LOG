@@ -39,7 +39,7 @@ ul {
 }
 
 .navi ul li {
-    margin: 0 10px;
+    /* margin: 0 10px; */
     position: relative;
 }
 
@@ -53,6 +53,10 @@ ul {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+.navi>ul.rightside{
+    display: flex;
+    gap: 15px;
 }
 
 
@@ -74,29 +78,55 @@ ul {
     display: flex;
     left: 30px;
     font-weight: 400;
+    gap: 10px;
+}
+.depth1>li{
+    height: 24px;
+    padding: 0 6px;
 }
 
 .depth2 {
-    position: absolute;
-    top: 20px;
-    left: 0;
+    width: 100%;
+    /* height: 100%; */
+    position: relative;
+    /* top: 20px;
+    left: 0; */
     padding: 0;
-    margin-top: 5px;
+    /* margin-top: 5px; */
     z-index: 100;
     /* 텍스트를 한줄로 출력 */
-    white-space: nowrap;
-    background-color: white;
+    /* white-space: nowrap; */
+    background-color: rgb(255, 255, 255);
+    /* display: none; */
     
     text-align: left;
-    transition: 1s;
     max-height: 0;
+    overflow: hidden;
+
 }
 
-.depth2 a{
-    display: none;
-    height: 100%;
-    margin: 5px 0;
+.depth2>li{
+    position: relative;
+    /* display: none; */
+    /* height: 100%; */
+    /* margin: 5px 0; */
+    /* display: block; */
+    left: 0;
+    top: 0;
+    border: 1px solid ;
+    border-bottom: none;
+
+    /* transition: 1s; */
 }
+.depth2>li:last-child{
+    border-bottom: 1px solid;
+}
+.depth2>li>a{
+    display: block;
+    cursor: pointer;
+    padding: 5px;
+}
+
 
 /* 프로젝트 버튼 */
 .project {
@@ -121,10 +151,14 @@ ul {
 /* 2뎁스 호버 시 드롭다운 효과 */
 .navi>.leftside>.depth1>li:hover .depth2 {
     max-height: 100vh;
-    border: 1px solid gainsboro;
+    transition: 1s;
+
+    /* border: 1px solid gainsboro; */
 }
-.navi>.leftside>.depth1>li:hover .depth2 li a{
+ 
+.navi>.leftside>.depth1>li:hover .depth2{
     display: block;
+
 }
 .navi>.leftside>.depth1>li>a:hover {
     color: #29c3ff;
@@ -156,14 +190,24 @@ ul {
     .navi {
         justify-content: center;
         margin-top: 15px;
+        flex-direction: column;
     }
 
+    .navi>ul.leftside{
+        flex-direction: column;
+    }
+    .navi>ul.leftside>.depth1{
+        flex-direction: column;
+    }
+    .navi>ul.rightside{
+        flex-direction: column;
+    }
     .rightside li {
-        display: none;
+        /* display: none; */
     }
 
     .project {
-        display: none;
+        /* display: none; */
     }
 
     .leftside {}
@@ -185,7 +229,7 @@ ul {
         display: block;
     }
     .logined{
-        display: none;
+        /* display: none; */
     }
 }
 
